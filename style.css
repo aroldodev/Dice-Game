@@ -1,27 +1,27 @@
 html, body { 
-  --color-1: #a8e6cf;
-  --color-2: #dcedc1; 
-  --color-3: #ffd3b6; 
-  --color-4: #ffaaa5; 
-  --color-5: #ff8b94;
+  --color-1: #2C3333;
+  --color-2: #ffddd2; 
+  --color-3: #e29578; 
+  --color-4: #e29578; 
+  --color-5: #A5C9CA;
   margin: 0;
   padding: 0;
 }
 
 body {
   padding-top: 50px;
-  background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+  background-color: var(--color-1);
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  color: black;
+  color: #E7F6F2;
 }
 
 .container {
   width: 400px;
   text-align: center;
   margin: 0 auto;
-  background-color: white;
-  box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+  background-color: #395B64;
+  border: 6px solid var(--color-5);
   padding: 50px;
 }
 
@@ -35,7 +35,8 @@ body {
   border-radius: 10px;
   width: 100px;
   height: 100px;
-  background-color: var(--color-3);
+  background-color: var(--color-5);
+  color: #E7F6F2;
   margin: 0 auto;
   font-size: 80px;
   display: block;
@@ -71,5 +72,5 @@ button:focus {
 }
 
 .active {
-  box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+  border: 3px solid whitesmoke;
 }

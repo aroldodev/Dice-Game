@@ -39,9 +39,11 @@ function showResetButton() {
     
     if (player1Score >= 20) {
         message.textContent = "Player 1 Won 🥳"
+        player1Dice.style.color = "black"
         showResetButton()
     }  else if (player2Score >= 20) {
         message.textContent = "Player 2 Won 🎉"
+        player2Dice.style.color = "black"
         showResetButton()
     }
     player1Turn = !player1Turn
@@ -64,4 +66,6 @@ function reset() {
     rollBtn.style.display = "block"
     player2Dice.classList.remove("active")
     player1Dice.classList.add("active")
+    player1Dice.style.color = "#E7F6F2"
+    player2Dice.style.color = "#E7F6F2"
 }
